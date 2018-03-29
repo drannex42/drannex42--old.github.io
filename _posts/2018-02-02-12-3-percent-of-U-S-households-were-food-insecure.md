@@ -2,6 +2,7 @@
 layout: post
 title: 15 Million U.S Households Are Food Insecure
 tags: blog featured
+description: "According to the Department of Agriculture’s Economic Research Service 12.3 percent of U.S. households, or 15.6 million households, were food insecure in 2016. "
 
 ---
 According to the [Department of Agriculture’s Economic Research Service](https://www.ers.usda.gov/webdocs/publications/84973/err237_summary.pdf?v=42979), 12.3 percent of U.S. households, or 15.6 million households, were food insecure in 2016. Food insecure means that members of the household have a difficult time getting enough to eat at some point during the year because they lack resources. Usually, children are shielded from hunger, and adults will go without food so younger members can eat. But 3.1 million households still had children who experienced food insecurity, which was similar to pre-recession levels in 2007*.
