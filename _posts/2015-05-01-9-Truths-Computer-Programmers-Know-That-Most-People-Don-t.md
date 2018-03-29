@@ -3,6 +3,7 @@ layout: post
 title:  "9 Truths Computer Programmers Know That Most People Don't"
 date:   2015-05-01 14:51:21 -0500
 tags: blog featured
+image: 'https://macleodsawyer.com/assets/covers/doom.jpg'
 ---
 
 Computer programs know far more about computers and code than the average person does, and honestly some of it’s scary.
