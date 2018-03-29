@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="post">
+<div class="container">
+    <a class="home_label" href="/">Home</a>
+</div>
+<div class="post_page">
+        <div class="post_content">
+            <h1>{{page.title}}</h1>
+            <p class="by">By <a href="/">Macleod Sawyer</a> - {{ page.date | date: "%A, %B %-d, %Y" }}
+</p>
+            {{content}}
+
+            {% if page.link %}
+                <a href="{{page.link}}" target="_blank">
+                    <blockquote>
+                        <h3>Click here to see article</h3>
+                        <p><small>{{page.link}}</small></p>
+                    </blockquote>
+                </a>
+            {% endif %}
+
+            <div class="social-share">
+            <div class="items">
+            <span>Share:</span>
+                <a href="https://twitter.com/intent/tweet?text={{page.title}}%20https%3A%2F%2Fmacleodsawyer.com{{page.url}}&via=macleodsawyerms"><i class="ion ion-social-twitter"></i></a>
+                <a href=""><i class="ion ion-social-facebook"></i></a>
+                <a href=""><i class="ion ion-social-reddit"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cling mb-full">
+            <h3>About the author</h3>
+            <p>Macleod Sawyer is the twenty-year-old founder and CEO of Sawyer Innovations [Si], and their new product OpenLeaf - A self-watering automated plant growth system. </p>
+            <p>Previously, he was the CEO/Founder of Activity+ (acq. '14) & IdeaDrops/Goodplatform (acq. '17).</p>
+            <p>Learn more: <a href="/">here</a></p>
+            <h3>Other articles:</h3>
+            {% for item in site.tags["featured"] %}
+                {% if item.url != page.url %}
+                <p><a href="{{ item.url }}">{{ item.title }}</a> <br><small> {{ item.date | date: "%A, %B %-d, %Y" }}
+                </small>
+                {% endif %}
+            {% endfor %}
+        </div>
+</div>
+

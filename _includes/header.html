@@ -1,0 +1,47 @@
+<html>
+    <head>
+        {% if page.title %}
+            <title>{{page.title}} - {{site.title}}</title>
+            <meta property="og:title" content="{{page.title}}" /> 
+            {% if page.description %}
+                <meta property="og:desciptions" content="{{page.description}}">
+            {% else %}
+                <meta property="og:desciptions" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' }}"/>
+            {% endif %}
+        {% else %}
+            <title>{{site.title}}</title>
+            <meta property="og:title" content="{[site.title}}" /> 
+            <meta property="og:description" content="This is the homepage and official website for entrepeneur, consultant, and inventor Macleod Sawyer."/>
+        {% endif %}
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{page.url}}" />
+        {% if page.image %}
+        <meta property="og:image" content="{{page.image}}" />
+        {% else %}
+            <meta property="og:image" content="/assets/turtleHead.jpg" />
+        {% endif %}
+
+        <link href="/assets/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+
+    </head>
+    <body>
+        <header>
+            <img class="banner-img" src="https://notion.imgix.net/https%3A%2F%2Fstatic.notion-static.com%2Fb0234b38-1d9c-473d-abc4-3dcd36ed8bd6%2Fmiriam-miles-57998-unsplash.jpg?w=3688&s=0ab6365efd4919688dd20e67ae0742c9">
+            </a>
+            <div class="container menu">
+                <a href="/">
+                    <img class="avi" src="/assets/avi.jpg">
+                </a>
+                <div class="items">
+                <a href="https://twitter.com/MacleodSawyerMS" target="_blank"><i class="ion ion-social-twitter"></i></a>
+                <a href="https://instagram.com/mxcleodsawyer" target="_blank"><i class="ion ion-social-instagram"></i></a>
+                <a href="mailto:macleod@macleodsawyer.com" target="_blank"><i class="ion ion-email"></i></a>
+                </div>
+            </div>
+        </header>

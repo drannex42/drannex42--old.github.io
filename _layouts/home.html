@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".show-more").click(function(){
+        $(".hideContent").toggleClass("showContent");
+    });
+});
+</script>
+
+        <div class="container">
+
+            <div class="blog-title">
+                Macleod Sawyer
+            </div>
+            <div class="desc">
+                <p><strong>Welcome! This is my own personal little micro-blog.</strong></p> 
+                <p><strong>Short About:</strong> Lover of Jazz, Turtles/Tortoises, and reading (especially science fiction and autobiographies). Builder of many things. 20.</p>
+                <hr>
+            </div>
+            <div class="content">
+                <div class="row">
+                <div class="half mb-full">
+                     <p><strong>I occasionally will post writings, thoughts, and other random things here.</strong> No promises on the content as my brain tends to go a million miles per hour in an infinite amount of categories.  These will link internally, and to other places my writing exists. May break at any time.</p>
+                </div>
+                <div class="half mb-full">
+                     <p><strong>Experience:</strong> Founded two acquired bootstrapped companies, was inducted into the Library of Congress, ran for office, elected five people to office, raised over $50,000 for grassroots causes, had a social media following of close to a million before retiring (at 19). 
+                </p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="half two-half mb-full" style="margin-top: -40px;" >
+                <p>I am the founder and CEO of Sawyer Innovations [Si], and our new product line OpenLeaf. </p>
+            </div>
+        </div>
+   {% include posts.html %}
+
+</div>
+</div>

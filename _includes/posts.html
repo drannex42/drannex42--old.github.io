@@ -1,0 +1,61 @@
+ <div class="section mb-full">
+        <h1 class="part-h1">Articles</h1>
+        <div class="writings links">
+            <div class="showContent">
+            {% for post in site.tags["blog"] %}
+                <p><a href="{{ post.url }}">{{ post.title }}</a> <br><small> {{ post.date | date: "%A, %B %-d, %Y" }}
+                </small>
+                {% if post.link %} 
+                    <br><small><small>{{post.link | truncatewords: 10}}</small></small>
+                {% endif %}
+                </p>
+            {% endfor %}
+        </div>
+        </div>
+        <!---
+         <div class="show-more">
+                <span>Show more (or less)</span>
+        </div>
+
+        -->
+    </div>
+    <div class="section mb-full">
+        <h1 class="part-h1">[Si] & OpenLeaf</h1>
+        <div class="links">
+        {% for post in site.tags["openleaf"] %}
+            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="section mb-full">
+        <h1 class="part-h1">Projects</h1>
+        <div class="links">
+            <p>
+                <i class="ion ion-star"></i>
+                <a href="/openleaf/2018/03/01/Vision-Roadmap-00f925e2-9c7b-4b21-82a5-ee21548ac9e7.html">
+                 OpenLeaf 
+                </a> 
+                <span class="label green">Launching</span>
+            </p>
+            <p>
+                Grow Journal
+                <span class="label black">Development</span>
+            </p>
+            <p>
+                <a href="https://uptownfunkify.macleodsawyer.com/">Uptownfunkify </a>
+                <span class="label blue">Continuous</span>
+            </p>
+             <p>
+                <a href="https://github.com/drannex42/coolgrids">Cool Grids</a>
+                <span class="label blue">Continuous</span>
+            </p>
+            <p>
+                <a href="https://charitydrops.org/">CharityDrops.org</a> 
+                <span class="label red">Discontinued</span>
+            </p>
+            <p>
+                <a href="/goodplatform/2016/12/01/GoodPlatform">GoodPlatform.org</a> 
+                <span class="label red">Discontinued</span>
+            </p>
+        </div>
+    </div>
